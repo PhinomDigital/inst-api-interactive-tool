@@ -1,0 +1,107 @@
+.react-grid-item.react-grid-placeholder {
+    background: #DDD;
+    box-shadow: inset 0px 1px 10px 2px rgba(30, 44, 57, 0.25);
+}
+
+/* Item */
+.item{
+    background: #FFFFFF;
+    /* border-radius: 5px; */
+    box-shadow: 0px 1px 10px -1px rgba(30, 44, 57, 0.0);
+    /* box-shadow: 0px 10px 25px -2px rgba(30, 44, 57, 0.15); */
+}
+.item:active{
+    box-shadow: 0px 25px 25px -2px rgba(30, 44, 57, 0.15);
+    transition: box-shadow 200ms;
+}
+.item-top {
+    height: 10px;
+    line-height: 5px;
+    padding-top:-5px;
+    display: flex;
+    cursor: grab;
+    transition: background 200ms;
+}
+.item-top:hover{
+    background-color: rgb(241, 241, 247);
+}
+.item-top:active{
+    background-color: rgb(220, 220, 228);
+    cursor: grabbing;
+}
+
+/* Item > Top */
+.item-top-content{
+    display: none;
+}
+.item-top:hover .item-top-content{
+    display: block;
+    margin: auto;
+    margin-top: -2px;
+}
+.item-top:active .item-top-content{
+    display: block;
+    margin: auto;
+    margin-top: -2px;
+}
+/* Item > Top */
+.item-top-right{
+    display: none;
+    cursor: pointer;
+}
+.item-top:hover .item-top-right{
+    display: block;
+    margin-top: -2px;
+}
+.item-top:active .item-top-right{
+    display: block;
+    margin-top: -2px;
+}
+
+/* Item > Content */
+.item-content{
+    width: 100%;
+    height: Calc(100% - 10px);
+    overflow: auto;
+}
+
+.ql-container.ql-snow {
+    border: 0px solid #ccc;
+    background-color: #ffffff
+}
+.ql-editor{
+padding:0px 0px
+}
+.ql-toolbar.ql-snow{
+    border: 0px solid #ccc;
+    /*padding:8px;*/
+    padding-left:45px;
+    padding-top:8px;
+    padding-bottom:8px;
+
+    background-color: #e6f3ff
+}
+.ql-toolbar.ql-snow.ql-formats{
+    margin-right:5px;
+}
+
+.mantine-1633b02 {
+    align-items: end;
+}
+.mantine-16ttirm {
+    align-items: end;
+    vertical-align:bottom;
+}
+.mantine-1590boo {
+    border:0px;
+    background-color:#f2f2f2
+}
+.modal-body{
+    background-color:#f2f5f5;
+}
+
+
+.element::-webkit-scrollbar { width: 0 !important }
+@print {
+body { overflow: hidden; }
+}
